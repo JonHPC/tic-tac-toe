@@ -1,0 +1,56 @@
+body{
+    background-color:rgb(51, 51, 51);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+
+.statusText{
+    text-align:center;
+    
+}
+
+.board{
+    display:grid;
+    gap:2px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.space{
+    border:1px solid rgb(255, 255, 255);
+    width:100px;
+    height:100px;
+    border-radius:8px;
+    text-align:center;
+    font-size:60px;
+    cursor:pointer;
+    line-height:100px;
+}
+
+.space:hover{
+    background-color:rgb(197, 197, 197);
+}
+
+#restartBtn {
+    background-color: rgb(224, 111, 111);
+    color:white;
+    padding:15px 32px;
+    border:none;
+    text-align:center;
+    text-decoration:none;
+    font-size:16px;
+    border-radius:24px;
+}
+
+#restartBtn:hover{
+    background-color:rgb(250, 148, 163);
+}
+
+#restartBtn:active{
+    background-color:rgb(252, 208, 208);
+}
